@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz App — JavaScript Practice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hrahsel sangtea</h1>
+      <p class="sub">Test your JS basics — timer, progress, score</p>
+    </header>
+
+    <main id="quiz-card" class="card">
+      <div class="top-row">
+        <div id="progress" class="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <div id="timer">Time: <span id="time">0</span>s</div>
+      </div>
+
+      <section id="question-area">
+        <h2 id="question">Question will appear here</h2>
+        <div id="options" class="options"></div>
+      </section>
+
+      <footer class="controls">
+        <button id="nextBtn" class="btn" style="display:none">Next</button>
+      </footer>
+
+      <div id="result" class="result hidden"></div>
+    </main>
+
+    <footer class="credits">
+      <small>Built with plain HTML/CSS/JS • Edit questions in <code>script.js</code></small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

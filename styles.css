@@ -1,0 +1,142 @@
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212; /* dark background */
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #1db954, #1ed760);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header .sub {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Quiz Card */
+#quiz-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+  padding: 25px;
+  margin-top: 20px;
+}
+
+/* Question */
+#question {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Options */
+#options button {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  margin: 10px 0;
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#options button:hover {
+  background: #1db954;
+  color: white;
+  transform: scale(1.02);
+}
+#options button.correct {
+  background: #16a34a; /* green */
+  border-color: #16a34a;
+  color: white;
+}
+#options button.wrong {
+  background: #ef4444; /* red */
+  border-color: #ef4444;
+  color: white;
+}
+
+/* Timer */
+#timer {
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Progress Bar */
+#progress {
+  background: #333;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 12px;
+  margin-bottom: 20px;
+}
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1db954, #1ed760);
+  transition: width 0.5s ease;
+}
+
+/* Next Button */
+#nextBtn {
+  background: #1db954;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+#nextBtn:hover {
+  background: #17a74a;
+  transform: translateY(-2px);
+}
+#nextBtn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/* Result */
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #2c2c2c;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer.credits {
+  text-align: center;
+  color: #aaa;
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
